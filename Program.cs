@@ -4,20 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _10._08._2023
+namespace ConsoleApp3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-
-            DateTime birthday = DateTime.Parse("2007/08/29");
-            DateTime now = DateTime.Parse(DateTime.Now.ToString());
-            int days = (now - birthday).Days;
-            Console.WriteLine("ot rojdenniq vi den sa minali {0} dena",days);
-
-            
-
+            string number = "111011000";
+            int number2=Convert.ToInt32(number,10);
+            string number3 = Convert.ToString(number2, 16);
+            Console.WriteLine(number3);
 
         }
     }
