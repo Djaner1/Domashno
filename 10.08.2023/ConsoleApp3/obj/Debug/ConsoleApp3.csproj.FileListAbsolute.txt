@@ -1,0 +1,8 @@
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.AssemblyReference.cache
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\User\Documents\programirane\10.08.2023\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
