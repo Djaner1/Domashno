@@ -4,16 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp3
+namespace _10._19._23
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string number = "111011000";
-            int number2=Convert.ToInt32(number,10);
-            string number3 = Convert.ToString(number2, 16);
-            Console.WriteLine(number3);
+            Console.Write("Enter V-");
+            float v = float.Parse(Console.ReadLine());
+            Console.Write("Enter T-");
+            float t = float.Parse(Console.ReadLine());
+            Console.Write("Enter a-");
+            float a=float.Parse(Console.ReadLine());
+            double s=(v*t)+(Math.Pow(a*t,2)/2);
+            Console.WriteLine("S="+s);
+
 
         }
     }
