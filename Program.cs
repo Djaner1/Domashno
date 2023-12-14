@@ -4,37 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11._9._23
+namespace Fitness
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-           
-            int n = int.Parse(Console.ReadLine());
-            int m=int.Parse(Console.ReadLine());
-            int[,] masiv = new int[n, m];
-            for(int i = 0; i < n; i++)
+            Console.WriteLine("Vuvedi imeto na fitnesa");
+            string name = Console.ReadLine();
+            List<string> gym=Console.ReadLine().Split(',').ToList();
+            Console.WriteLine("Na koi ured iskate da trenirate");
+            string machine=Console.ReadLine();
+            for(int i=0; i < gym.Count; i++)
             {
-                for(int j = 0; j < m; j++)
-                {
-                    masiv[i,j]=int.Parse(Console.ReadLine());
-
-                }
+                if (machine == gym[i])
+                    Console.WriteLine("Ima takuv ured");
+                else
+                    Console.WriteLine("Nqma takuv ured");
+                Console.WriteLine(gym[i]+" "+name);
             }
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < m; j++)
-                {
-                    if(masiv[i,j]/2==0)
-                    {
-                        Console.WriteLine(masiv[i,j]);
-                    }
-
-                }
-            }
-
-
+            gym.Add("Leg press");
+            Console.WriteLine("Broq na uredite-"+gym.Count);
 
         }
     }
