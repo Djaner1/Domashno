@@ -4,27 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fitness
+namespace Visochina_na_uchenici
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Vuvedi imeto na fitnesa");
-            string name = Console.ReadLine();
-            List<string> gym=Console.ReadLine().Split(',').ToList();
-            Console.WriteLine("Na koi ured iskate da trenirate");
-            string machine=Console.ReadLine();
-            for(int i=0; i < gym.Count; i++)
+            double max = double.MinValue;
+            var height=new Dictionary<string,double>();
+            height["Dimitar"] = 1.80;
+            height["Viktor"] = 1.77;
+            height["Ivan"] = 1.50;
+            height["Aleks"]=1.84;
+            foreach(var i in height)
             {
-                if (machine == gym[i])
-                    Console.WriteLine("Ima takuv ured");
-                else
-                    Console.WriteLine("Nqma takuv ured");
-                Console.WriteLine(gym[i]+" "+name);
+                Console.WriteLine("{0}--{1}",i.Key,i.Value);                
             }
-            gym.Add("Leg press");
-            Console.WriteLine("Broq na uredite-"+gym.Count);
+            height["Djaner"] = 1.78;
+            foreach (var i in height)
+            {
+                if(i.Value>max) max=i.Value;
+
+            }
+            var keyOfMaxValue =
+    height.Aggregate((x, y) => x.Value > y.Value ? x : y).Key;
+            Console.WriteLine("Nai visokiq uchenik-"+keyOfMaxValue);
+            var total = height.Sum(v => v.Value);
+            double sr = total / height.Count;
+            Console.WriteLine(total);
+            Console.WriteLine("sredna visochina-"+sr);
+            Console.WriteLine("Broi na uchenici="+height.Count);
+
+
 
         }
     }
